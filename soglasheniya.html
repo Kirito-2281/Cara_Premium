@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пользовательское Соглашение — Lamborghini</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sogl.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Пользовательское Соглашение</h1>
+            <p class="subtitle">Добро пожаловать в мир эксклюзива. Это соглашение определяет правила владения гиперкаром <strong>Lamborghini</strong>.<br>Цель — сохранение статуса, безопасности и уникальности вашего автомобиля.</p>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">Ответственное вождение</h2>
+                <ul class="section-list">
+                    <li>Запрет на уличные гонки, дрифты и экстремальные манёвры. Автомобиль создан для комфорта и безопасности, а не для рискованного вождения</li>
+                    <li>Строгое соблюдение ПДД и ограничения скорости</li>
+                    <li>Предотвращение опасных ситуаций для всех участников движения</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Защита имиджа бренда</h2>
+                <ul class="section-list">
+                    <li>Ваше поведение отражает премиальный статус Lamborghini (люкс, инновации, мощь)</li>
+                    <li>Запрет на использование в криминальных или неэтичных целях</li>
+                    <li>Осторожность в соцсетях: публикации не должны создавать негативный образ</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Эксклюзивность и уникальность</h2>
+                <ul class="section-list">
+                    <li>Признание ценности ручной сборки и высоких технологий</li>
+                    <li>Использование только для особых случаев, не как ежедневный транспорт</li>
+                    <li>Запрет на коммерческое использование без разрешения</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Обслуживание и модификации</h2>
+                <ul class="section-list">
+                    <li>ТО только в авторизованных центрах с оригинальными запчастями</li>
+                    <li>Запрет на тюнинг без письменного одобрения Lamborghini</li>
+                    <li>Изменение внешнего вида строго не рекомендуется</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Страхование</h2>
+                <ul class="section-list">
+                    <li>Обязательно специализированное страхование для высокого класса риска</li>
+                    <li>Согласование условий с официальным дилером</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Последствия нарушений</h2>
+                <ul class="section-list">
+                    <li>Аннулирование гарантии</li>
+                    <li>Юридическая ответственность</li>
+                    <li>Потеря доступа к эксклюзивным мероприятиям</li>
+                    <li>Отзыв привилегий владельца</li>
+                </ul>
+            </div>
+        </div>
+        <div class="agreement">
+            <label class="agreement-label" for="agreeCheck">
+                <input type="checkbox" class="agreement-checkbox" id="agreeCheck">
+                <span>Я принимаю условия пользовательского соглашения</span>
+            </label>
+            <!-- ИСПРАВЛЕНО: убран тег <a> из кнопки -->
+            <button class="agreement-btn" id="agreeBtn" disabled>
+                Перейти к автомобилю
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Активация кнопки при выборе чекбокса
+        const agreeCheck = document.getElementById('agreeCheck');
+        const agreeBtn = document.getElementById('agreeBtn');
+        
+        agreeCheck.addEventListener('change', () => {
+            agreeBtn.disabled = !agreeCheck.checked;
+        });
+
+        // Переход на другую страницу при клике на кнопку
+        agreeBtn.addEventListener('click', () => {
+            if (!agreeBtn.disabled) {
+                // ИСПРАВЛЕНО: выполняем переход напрямую
+                window.location.href = "index.html"; // Укажите здесь нужный URL
+            }
+        });
+    </script>
+</body>
+</html>

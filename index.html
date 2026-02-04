@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>EXCLUSIVE CAR RENTALS | Премиальные автомобили</title>
+</head>
+<body>
+    <div class="mainDiv">
+        <header class="header">
+            <div class="logo">
+                <div class="logoImg">
+                    EXCLUSIVE
+                </div>
+                <div class="carrentals">CAR RENTALS</div>
+                <div class="phones">
+                    <div class="phoneTop">
+                        8 800 555 35 35; +7 999 123 45 67
+                    </div>
+                    <div class="address">
+                        г. Москва, ул. Автозаводская, 15
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navigationMenu">
+            <div class="menu">
+                <div class="menuItem active">
+                    <a href="index.html">Главная</a>
+                </div>
+                <div class="menuItem">
+                    <a href="#footer">О нас</a>
+                </div>
+                <div class="menuItem">
+                    <a href="soglasheniya.html">Соглашение</a>
+                </div>
+                <div class="menuItem">
+                    <a href="car.html">Купить</a>
+                </div>
+                <div class="menuItem">
+                    <a href="#footer">Контакты</a> 
+                </div>
+            </div>
+        </nav>
+        
+        <main>
+            <section class="carousel">
+                <div class="photos">
+                    <img src="/img/photo1.jpg" alt="Lamborghini Aventador">
+                    <img src="/img/photo2.jpg" alt="Lamborghini Huracan">
+                    <img src="/img/photo3.jpg" alt="Lamborghini Urus">
+                </div>
+                <div class="description">
+                    <div class="desc">
+                        <h3>Lamborghini</h3>
+                        <div class="modelName">Aventador SVJ</div>
+                        <div class="text">
+                            Эксклюзивный гиперкар с двигателем V12 мощностью 770 л.с. и уникальным аэродинамическим дизайном. Максимальная скорость - 350 км/ч, разгон до 100 км/ч за 2.8 секунды.
+                        </div>
+                        <div class="price">25 000 000₽</div>
+                        <div class="priceDescription">Тест-драйв включен</div>
+                    </div>
+                    <div class="desc d-none">
+                        <h3>Lamborghini</h3>
+                        <div class="modelName">Huracán EVO</div>
+                        <div class="text">
+                            Спорткар с двигателем V10 5.2 л, 640 л.с. Система полного привода и адаптивная подвеска. Цифровая приборная панель и продвинутые системы помощи водителю.
+                        </div>
+                        <div class="price">18 500 000₽</div>
+                        <div class="priceDescription">Гарантия 3 года</div>
+                    </div>
+                    <div class="desc d-none">
+                        <h3>Lamborghini</h3>
+                        <div class="modelName">Urus S</div>
+                        <div class="text">
+                            Первый в мире супер-внедорожник. Двигатель V8 twin-turbo, 666 л.с. Сочетание комфорта, роскоши и экстремальной производительности. Вместимость до 5 пассажиров.
+                        </div>
+                        <div class="price">22 000 000₽</div>
+                        <div class="priceDescription">Комплектация Premium</div>
+                    </div>
+                    <div class="rounds">
+                        <div class="round active" data-index="0"></div>
+                        <div class="round" data-index="1"></div>
+                        <div class="round" data-index="2"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="SpesialGiftSearch">
+                <div class="block">
+                    <h3>Special</h3>
+                    <div class="modelName">Offers & Packages</div>
+                    <div class="text">
+                        Эксклюзивные предложения для наших клиентов. Рассрочка до 7 лет, trade-in вашего автомобиля, индивидуальный лизинг и специальные финансовые программы.
+                    </div>
+                    <a href="car.html">Подробнее</a>
+                </div>
+                <div class="block">
+                    <h3>Gift</h3>
+                    <div class="modelName">Certificates</div>
+                    <div class="text">
+                        Подарочные сертификаты на любую сумму. Идеальный подарок для ценителей роскошных автомобилей. Сертификаты можно использовать для покупки, аренды или услуг автосалона.
+                    </div>
+                    <a href="car.html">Выбрать</a>
+                </div>
+                <div class="block">
+                    <h3>Search</h3>
+                    <div class="modelName">Our Cars</div>
+                    <div class="text search-container">
+                        <div class="search-filters">
+                            <select id="modelSelect">
+                                <option value="">Выберите модель</option>
+                                <option value="aventador">Aventador</option>
+                                <option value="huracan">Huracán</option>
+                                <option value="urus">Urus</option>
+                                <option value="revuelto">Revuelto</option>
+                                <option value="sian">Sián</option>
+                            </select>
+                            
+                            <select id="colorSelect">
+                                <option value="">Выберите цвет</option>
+                                <option value="yellow">Giallo Inti (Желтый)</option>
+                                <option value="black">Nero Noctis (Черный)</option>
+                                <option value="white">Bianco Monocerus (Белый)</option>
+                                <option value="red">Rosso Mars (Красный)</option>
+                                <option value="green">Verde Mantis (Зеленый)</option>
+                                <option value="blue">Blu Cepheus (Синий)</option>
+                                <option value="orange">Arancio Borealis (Оранжевый)</option>
+                            </select>
+                            
+                            <select id="priceSelect">
+                                <option value="">Выберите ценовой диапазон</option>
+                                <option value="0-20">До 20 000 000₽</option>
+                                <option value="20-30">20-30 000 000₽</option>
+                                <option value="30-40">30-40 000 000₽</option>
+                                <option value="40+">От 40 000 000₽</option>
+                                <option value="premium">Премиум сегмент</option>
+                            </select>
+                        </div>
+                        
+                        <div class="search-status" id="searchStatus"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="footer">
+            <div class="footer-content">
+                <dl>
+                    <dt>Связаться с нами</dt>
+                    <dd>Телефон: 8 800 555 35 35</dd>
+                    <dd>WhatsApp: +7 999 123 45 67</dd>
+                    <dd>Telegram: @exclusive_cars</dd>
+                    <dd>Email: info@exclusive-cars.ru</dd>
+                </dl>
+                <dl>
+                    <dt>Часы работы</dt>
+                    <dd>Пн-Пт: 9:00 - 21:00</dd>
+                    <dd>Сб: 10:00 - 20:00</dd>
+                    <dd>Вс: 11:00 - 18:00</dd>
+                    <dd>Тест-драйвы: по записи</dd>
+                </dl>
+                <dl>
+                    <dt>Наши услуги</dt>
+                    <dd>Продажа новых автомобилей</dd>
+                    <dd>Trade-in обмен</dd>
+                    <dd>Корпоративный лизинг</dd>
+                    <dd>Сервисное обслуживание</dd>
+                </dl>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

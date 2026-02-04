@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покупка машины | Автосалон «Премиум Авто»</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/car.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-car"></i>
+                Автосалон «Премиум Авто»
+            </a>
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav" id="mainNav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="#gallery" class="nav-link">Фото</a>
+                <a href="#car-info" class="nav-link">Описание</a>
+                <a href="#order" class="nav-link">Заказать</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+                <a href="#" class="btn btn-outline" style="margin-top: 15px;">Консультация</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section gallery-section" id="gallery">
+        <div class="container gallery-container">
+            <h2 class="section-title">
+                Фото автомобиля
+                <span class="section-subtitle">Просмотрите автомобиль с разных углов</span>
+            </h2>
+
+            <div class="slider-container">
+                <div class="slides" id="slides">
+                    <div class="slide">
+                        <img src="img/photo1.jpg" alt="Toyota Camry 2023">
+                        <div class="slide-content">
+                            <h3>Lamborghini 2023</h3>
+                            <p>Новая модель с улучшенной динамикой и современным дизайном. Эффективный двигатель и комфортное салон.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/photo2.jpg" alt="Интерьер Toyota Camry">
+                        <div class="slide-content">
+                            <h3>Эксклюзивный интерьер</h3>
+                            <p>Премиум-материалы, эргономичные сидения и инновационный мультимедийный комплекс.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/photo3.jpg" alt="Toyota Camry в природе">
+                        <div class="slide-content">
+                            <h3>Динамика и стиль</h3>
+                            <p>Аэродинамический кузов и мощный двигатель обеспечивают превосходную динамику.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-arrows">
+                    <button class="slider-arrow" id="prevArrow">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-arrow" id="nextArrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="thumbnails">
+                <div class="thumbnail active" data-index="0">
+                    <img src="img/photo1.jpg" alt="Toyota Camry">
+                    <div class="color-indicator"></div>
+                </div>
+                <div class="thumbnail" data-index="1">
+                    <img src="img/photo2.jpg" alt="Интерьер">
+                    <div class="color-indicator" style="background: #3498db;"></div>
+                </div>
+                <div class="thumbnail" data-index="2">
+                    <img src="img/photo3.jpg" alt="В природе">
+                    <div class="color-indicator" style="background: #e74c3c;"></div>
+                </div>
+            </div>
+
+            <div class="slider-controls">
+                <div class="slider-dot active" data-index="0"></div>
+                <div class="slider-dot" data-index="1"></div>
+                <div class="slider-dot" data-index="2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ИНФОРМАЦИЯ О МАШИНЕ -->
+    <section class="section" id="car-info">
+        <div class="container">
+            <div class="car-info">
+                <div class="car-header">
+                    <div class="car-title">
+                        <h1>Lamborghini 2023</h1>
+                        <p>Новая модель семейства Lamborghini с улучшенной динамикой, современным дизайном и продвинутыми технологиями. Эффективный 2.5-литровый двигатель и комфортное салон.</p>
+                    </div>
+                    <div class="price-tag">
+                        <span>Цена:</span> 1 000 000 ₽
+                    </div>
+                </div>
+
+                <div class="car-specs">
+                    <div class="spec animate-fadeInUp">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h3>Двигатель</h3>
+                        <div class="value">2.5 L, 203 л.с.</div>
+                    </div>
+                    <div class="spec animate-fadeInUp delay-1">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Трансмиссия</h3>
+                        <div class="value">Автоматическая 8-ступенчатая</div>
+                    </div>
+                    <div class="spec animate-fadeInUp delay-2">
+                        <i class="fas fa-gas-pump"></i>
+                        <h3>Расход топлива</h3>
+                        <div class="value">7.5 л/100 км (смешанный цикл)</div>
+                    </div>
+                    <div class="spec animate-fadeInUp delay-3">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                        <h3>Размеры</h3>
+                        <div class="value">4885 × 1840 × 1445 мм</div>
+                    </div>
+                </div>
+
+                <div class="car-description">
+                    <h3>Подробная информация</h3>
+                    <div class="description-content">
+                        <div class="desc-item animate-fadeInUp">
+                            <h4><i class="fas fa-paint-brush"></i> Дизайн и кузов</h4>
+                            <p>Новая Lamborghini 2023 год выпуска представлена в улучшенном дизайне с динамичной линией покрытия, аэродинамическим бампером и современными оптическими блоками. Корпус выполнен с использованием высокопрочной стали для повышения безопасности.</p>
+                        </div>
+                        <div class="desc-item animate-fadeInUp delay-1">
+                            <h4><i class="fas fa-sync-alt"></i> Технические характеристики</h4>
+                            <p>Основной двигатель - 4-цилиндровый 2.5-литровый Dynamic Force Engine, развивающий мощность 203 л.с. и крутящий момент 250 Нм. Двигатель сочетает высокую динамику с экономичностью топлива. Трансмиссия - автоматическая 8-ступенчатая Direct-Shift.</p>
+                        </div>
+                        <div class="desc-item animate-fadeInUp delay-2">
+                            <h4><i class="fas fa-user-friends"></i> Комфорт и интерьер</h4>
+                            <p>Эксклюзивный интерьер с премиум-материалами, эргономичными сидениями с подогревом и 8-дюймовым сенсорным экраном. Оборудован системой мультимедиа Toyota Safety Sense, климат-контролем с двойной зоной, камерой заднего вида и системой парковки.</p>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="#order" class="btn btn-success">
+                            <i class="fas fa-shopping-cart"></i> Купить сейчас
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ИНФОРМАЦИОННЫЕ БЛОКИ -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">
+                Почему выбирают нас?
+                <span class="section-subtitle">Наши преимущества и услуги</span>
+            </h2>
+
+            <div class="info-blocks">
+                <div class="info-card animate-fadeInUp">
+                    <div class="info-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Гарантия</h3>
+                    <p>Официальная гарантия производителя на 3 года или 100 000 км. Полная диагностика перед продажей и постоянная поддержка.</p>
+                </div>
+                <div class="info-card animate-fadeInUp delay-1">
+                    <div class="info-icon">
+                        <i class="fas fa-truck-moving"></i>
+                    </div>
+                    <h3>Доставка</h3>
+                    <p>Бесплатная доставка в любой город РФ. Обеспечиваем профессиональную упаковку и сопровождение груза до пункта приема.</p>
+                </div>
+                <div class="info-card animate-fadeInUp delay-2">
+                    <div class="info-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Оплата</h3>
+                    <p>Многовариантная оплата: рассрочка (до 60 месяцев), кредит, банковский перевод, оплата наличными. Скидки до 15%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФОРМА ЗАКАЗА -->
+    <section class="section" id="order">
+        <div class="container">
+            <div class="order-form">
+                <div class="form-header">
+                    <h2>Закажите Lamborghini 2023</h2>
+                    <p>Заполните форму и наши менеджеры свяжутся с вами в течение 15 минут для подтверждения заказа и консультации.</p>
+                </div>
+
+                <div class="form-container">
+                    <form class="form" id="orderForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Ваше имя *</label>
+                                <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="example@mail.ru">
+                            </div>
+                            <div class="form-group">
+                                <label for="color">Цвет автомобиля</label>
+                                <select id="color" name="color" required>
+                                    <option value="">Выберите цвет</option>
+                                    <option value="white">Белый жемчуг</option>
+                                    <option value="black">Черный</option>
+                                    <option value="silver">Серебристый</option>
+                                    <option value="red">Красный</option>
+                                    <option value="blue">Голубой</option>
+                                    <option value="gray">Серый</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="address">Адрес доставки</label>
+                                <input type="text" id="address" name="address" placeholder="г. Москва, ул. Автозаводская, 15">
+                            </div>
+                            <div class="form-group">
+                                <label for="deliveryDate">Дата доставки</label>
+                                <input type="date" id="deliveryDate" name="deliveryDate" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="warranty" name="warranty" checked>
+                                <label for="warranty">Гарантия 3 года (включена в стоимость)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="insurance" name="insurance">
+                                <label for="insurance">Комплексная страховка (от 25 000 ₽)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="accessories" name="accessories">
+                                <label for="accessories">Дополнительные аксессуары (шины, коврики, навигация)</label>
+                            </div>
+                        </div>
+
+                        <div class="form-footer">
+                            <button type="submit" class="btn btn-success">
+                                <i class="fas fa-paper-plane"></i> Отправить заказ
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Автосалон «Премиум Авто»</h3>
+                    <p style="margin-top: 20px; opacity: 0.8;">Официальный дилер Lamborghini с 2010 года. Обеспечиваем выбор новых и б/у автомобилей с полной документацией.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>г. Москва, ул. Автозаводская, 15</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+8 800 555 35 35</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@premiumauto.ru</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Пн-Пт: 9:00 - 20:00<br>Сб: 10:00 - 18:00<br>Вс: 11:00 - 17:00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Полезные ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Гарантийные условия</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Правила доставки</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Отзывы клиентов</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Сравнение моделей</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Контактная форма</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2023 Автосалон «Премиум Авто». Все права защищены. 
+                <span style="margin-left: 15px;">Официальный дилер Lamborgihini</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ЛАЙТБОКС -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="closeLightbox">&times;</span>
+            <img src="" alt="Увеличенное фото" class="lightbox-img" id="lightboxImg">
+        </div>
+    </div>
+
+    <!-- СКРОЛЛ-ЭФФЕКТ -->
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <script>
+        // Доступ к элементам DOM
+        const mobileToggle = document.getElementById('mobileToggle');
+        const mainNav = document.getElementById('mainNav');
+        const slides = document.getElementById('slides');
+        const prevArrow = document.getElementById('prevArrow');
+        const nextArrow = document.getElementById('nextArrow');
+        const slideDots = document.querySelectorAll('.slider-dot');
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const lightbox = document.getElementById('lightbox');
+        const closeLightbox = document.getElementById('closeLightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const orderForm = document.getElementById('orderForm');
+        const scrollIndicator = document.querySelector('.scroll-indicator');
+
+        // Переменные для слайдера
+        let currentSlide = 0;
+        const totalSlides = slides.children.length;
+        let slideInterval;
+
+        // Функция запуска слайдера
+        function startSlider() {
+            slideInterval = setInterval(() => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateSlider();
+            }, 5000);
+        }
+
+        // Функция обновления слайдера
+        function updateSlider() {
+            // Скрываем все слайды
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            // Обновляем активные точки
+            slideDots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+            
+            // Обновляем активные мини-превью
+            thumbnails.forEach((thumbnail, index) => {
+                thumbnail.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        // Функция переключения слайда
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlider();
+        }
+
+        // Функция для навигации по слайдам
+        function navigateSlider(direction) {
+            currentSlide = (currentSlide + direction) % totalSlides;
+            if (currentSlide < 0) currentSlide = totalSlides - 1;
+            updateSlider();
+        }
+
+        // Функция для открытия лайтбокса
+        function openLightbox(imageSrc) {
+            lightboxImg.src = imageSrc;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Функция для закрытия лайтбокса
+        function closeLightboxFunc() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Функция для инициализации событий
+        function initEvents() {
+            // Меню для мобильных устройств
+            mobileToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+                mobileToggle.innerHTML = mainNav.classList.contains('active') ? 
+                    '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            });
+
+            // Навигация по слайдам
+            prevArrow.addEventListener('click', () => navigateSlider(-1));
+            nextArrow.addEventListener('click', () => navigateSlider(1));
+
+            // Навигация по точкам
+            slideDots.forEach((dot, index) => {
+                dot.addEventListener('click', () => goToSlide(index));
+            });
+
+            // Навигация по мини-превью
+            thumbnails.forEach((thumbnail, index) => {
+                thumbnail.addEventListener('click', () => {
+                    goToSlide(index);
+                    
+                    // Открываем лайтбокс при клике на первое фото
+                    if (index === 0) {
+                        openLightbox(thumbnail.querySelector('img').src);
+                    }
+                });
+            });
+
+            // Открытие лайтбокса при клике на большое фото
+            slides.querySelectorAll('.slide img').forEach(img => {
+                img.addEventListener('click', () => {
+                    openLightbox(img.src);
+                });
+            });
+
+            // Закрытие лайтбокса
+            closeLightbox.addEventListener('click', closeLightboxFunc);
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) closeLightboxFunc();
+            });
+
+            // Плавный скролл при клике на ссылки
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Закрываем мобильное меню после клика
+                        if (mainNav.classList.contains('active')) {
+                            mainNav.classList.remove('active');
+                            mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                    }
+                });
+            });
+
+            // Отправка формы заказа
+            orderForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Получаем данные из формы
+                const formData = {
+                    name: document.getElementById('name').value,
+                    phone: document.getElementById('phone').value,
+                    email: document.getElementById('email').value,
+                    color: document.getElementById('color').value,
+                    address: document.getElementById('address').value,
+                    deliveryDate: document.getElementById('deliveryDate').value,
+                    warranty: document.getElementById('warranty').checked,
+                    insurance: document.getElementById('insurance').checked,
+                    accessories: document.getElementById('accessories').checked
+                };
+                
+                // Выводим сообщение о успешной отправке (в реальном приложении здесь будет отправка на сервер)
+                alert('Заказ успешно отправлен!\nНаши менеджеры свяжутся с вами в течение 15 минут.');
+                
+                // Сбрасываем форму
+                orderForm.reset();
+                document.getElementById('color').selectedIndex = 0;
+                document.getElementById('warranty').checked = true;
+                document.getElementById('insurance').checked = false;
+                document.getElementById('accessories').checked = false;
+                
+                // Скроллим к заголовку страницы
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Анимация при прокрутке
+            const animateElements = document.querySelectorAll('.animate-fadeInUp');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            animateElements.forEach(element => {
+                observer.observe(element);
+            });
+
+            // Скролл-индикатор
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 50) {
+                    scrollIndicator.style.opacity = '0';
+                } else {
+                    scrollIndicator.style.opacity = '1';
+                }
+            });
+        }
+
+        // Инициализация при загрузке страницы
+        document.addEventListener('DOMContentLoaded', () => {
+            // Запускаем слайдер
+            startSlider();
+            
+            // Инициализируем события
+            initEvents();
+            
+            // Устанавливаем минимальную дату для календаря (сегодня)
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('deliveryDate').min = today;
+        });
+    </script>
+</body>
+</html>
